@@ -9,8 +9,7 @@ Welcome to our roll the dice game application!
 - counter for correct vs incorrect guesses
 
 ## Installation and Usage
-- html, css, javascript
-    - netlify
+[Click here to play our game!](https://random-dice-game-dale.netlify.app/)
 
 ## Technologies
 - html, css, javascript
