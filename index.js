@@ -1,4 +1,6 @@
 const guessForm = document.querySelector("#form")
+const rightGuess = document.querySelector("#rightGuess")
+const wrongGuess = document.querySelector("#wrongGuess")
 const diceRollImg = document.querySelector("#dice")
 
 guessForm.addEventListener("submit", getGuess)
@@ -37,9 +39,19 @@ function guessMatch(guess) {
     const randomNumber = rollTheDice()
     if (guess == randomNumber) {
         countWins++
-        return `${guess} was right, well done!`
+        updateWins()
+        return `${guess} was right, well done!`  // Change to alert ?
     } else {
         countLoss++
-        return `${guess} was wrong - better luck next time!`
+        updateLoss()
+        return `${guess} was wrong - better luck next time!` // Change to alert ?
     }
+}
+
+function updateWins() {
+    rightGuess.textContent = `Right Guesses: ${countWins}`
+}
+
+function updateLoss() {
+    wrongGuess.textContent = `Wrong Guesses: ${countLoss}`
 }
