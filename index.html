@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap?-->
+    <title>Random Dice Game</title>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO OUR RANDOM DICE GAME!!</h1>
+    </header>
+    <section>
+        <h3>The rules are as follow...</h3>
+        <p>
+            <ol>
+                <li>Guess a number between 1 & 6</li>
+                <li>Click 'Roll Dice!'</li>
+                <li id="warning">BEWARE - 7 wrong guesses, GAME OVER.....</li>
+            </ol>
+        </p>
+    </section>
+    <main>
+        <section id="form">
+            <form>
+                <label for="guessNumber">Enter a Number Between 1 & 6:</label><br>
+                <input type="text" name="guessNumber" required>
+                <button id="guessSubmit">
+                    Roll Dice!
+                </button>
+            </form>
+        </section>
+
+        <section id="dice">
+                <!--need to addEventListener to update picture once clicked to the randomnumber generated-->
+                <img src="./assets/initial_dice.png" alt="picture of dice">
+        </section>
+        
+    </main>
+
+    
+</body>
+</html>
