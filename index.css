@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#ruleList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* #ruleList ol {
+    display: flex;
+    justify-content: center;
+} */
