@@ -10,7 +10,15 @@ Welcome to our Random Dice Game application!
 
 
 ## Installation, Usage & technologies
-[Check out our game here!](https://random-dice-game-dale.netlify.app/)
+[Check out our game here!](https://random-dice-game-dale.netlify.app/) <br>
+To run from the cli, clone this repo and run the following commands from the terminal: <br>
+`npm i`<br>
+Followed by: <br>
+For Mac:
+`open index.html` <br>
+For Windows:
+`start index.html`
+<br> *Requires Safari and Chrome browsers installed respectively*
 
 ## How we made the game
 - Begun by working on the HTML, design the content we wanted our webpage to show. We added :
