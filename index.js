@@ -14,6 +14,7 @@ function getGuess(e) {
 
 let countWins = 0
 let countLoss = 0
+let rounds = 0
 
 function rollTheDice() {
     // need to be between 1 and 6
@@ -36,7 +37,22 @@ function validGuess(guess) {
     }
 }
 
+function tryAgain() {
+    window.location.reload();
+}
+
 function guessMatch(guess) {
+    if (countLoss > 5) {
+        alert("You were warned")
+        diceRollImg.src="./assets/dale.jpg"
+        outcomeMessage.textContent = "DALE"
+        const resetBtn = document.createElement("button")
+        resetBtn.textContent = "dale..."
+        outcomeMessage.appendChild(resetBtn)
+        resetBtn.addEventListener("click", tryAgain)
+        return
+    }
+
     const randomNumber = rollTheDice()
     if (guess == randomNumber) {
         countWins++
