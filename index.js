@@ -23,10 +23,10 @@ function rollTheDice() {
 
 // check that the input is valid - no letters and between 1 and 6-
 function validGuess(guess) {
-    if (guess >= 7) {
+    if (guess >= 7 || guess <= 0) {
         alert("Invalid input, must be a number between 1 & 6")
         // throw new Error("Invalid input, must be a number between 1 & 6")
-    } else if (guess <= 0) {
+    } else if (isNaN(guess)) {
         alert("Invalid input, must be a number between 1 & 6")
     } else {
         return guessMatch(guess)
@@ -43,17 +43,3 @@ function guessMatch(guess) {
         return `${guess} was wrong - better luck next time!`
     }
 }
-
-
-/* BEGIN
-SET ans to random number using Math.floor and Math.random
-WHILE ans is 0, keep re-randomizing and assigning
-RETURN ans when its not 0
-END
-*/
-
-
-/* guessNumberMatch(guess) function
-BEGIN
-INPUT guess
-*/
